@@ -6,8 +6,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1 eerste pagina- https://www.nike.com/nl/
-2. -bron 2 tweede pagina- https://www.nike.com/nl/t/air-max-270-damesschoen-bkLrvm/AH6789-601
+1. -bron 1 eerste pagina- https://www.lesmills.com/nl/
+2. -bron 2 tweede pagina- https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/
 3. -...-
 
 
@@ -77,10 +77,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/intake/homeNike.png" width="375px" alt="home-page-Nike">
-** https://www.nike.com/nl/ **
+<img src="images/intake/homeNike.png" width="375px" alt="home-page-lesmills">
+** https://www.lesmills.com/nl/ **
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/intake/shoeNike.png" width="375px" alt="shoe-page-Nike">
-** https://www.nike.com/nl/t/air-max-270-damesschoen-bkLrvm/AH6789-601 **
+<img src="images/intake/lesMillsBp.png" width="375px" alt="workout-page">
+** https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/ **
