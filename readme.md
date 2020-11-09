@@ -77,7 +77,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/intake/homeNike.png" width="375px" alt="home-page-lesmills">
+<img src="images/intake/lesMillsHome.png" width="375px" alt="home-page-lesmills">
 ** https://www.lesmills.com/nl/ **
 
 **Screenshot(s) van de tweede pagina (small screen):**
