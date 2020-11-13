@@ -63,26 +63,26 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 **uitwerken voor de 1e werkgroep-
 <img src="images/readme/lesMillsBreakdownschets-1.png" width="375px" alt="lesMillsBreakDownShets">
-**eind van de eerste week-
+-eind van de eerste week-
 
 
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw
-**Mijn start niveau: Rood
+**Je startniveau:** -kies uit zwart, rood óf blauw-
+Mijn start niveau: Rood
 
-**Je focus:** -kies uit responsive óf surface plane
-**Voor deze opdracht ga ik me focussen op responsive.
+**Je focus:** -kies uit responsive óf surface plane-
+Voor deze opdracht ga ik me focussen op responsive.
 
 **Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
-**De website link: https://www.lesmills.com/nl
+De website link: https://www.lesmills.com/nl
 
-**Screenshot(s) van de eerste pagina (small screen):
+**Screenshot(s) van de eerste pagina (small screen):-
 <img src="images/intake/lesMillsHome.png" width="375px" alt="home-page-lesmills">
-** bron: https://www.lesmills.com/nl/ **
+bron: https://www.lesmills.com/nl/
 
-**Screenshot(s) van de tweede pagina (small screen):
+**Screenshot(s) van de tweede pagina (small screen):-
 <img src="images/intake/lesMillsBp.png" width="375px" alt="workout-page">
-** bron: https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/
+bron: https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/
