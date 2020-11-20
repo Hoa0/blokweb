@@ -8,7 +8,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Bronnenlijst
 1. bron 1 eerste pagina: https://www.lesmills.com/nl/
 2. bron 2 tweede pagina: https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/
-3. -...-
+3. -...-https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
 
 
 
