@@ -6,62 +6,155 @@
 
 HTML,
 body {
-  font-family:Arial,Helvetica,sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  font-size: 100% / 250%;
-  letter-spacing: 0.15em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: 100% / 250%;
+    letter-spacing: 0.15em;
 
 }
 
-header{
-    background-color:black;
-    position:relative;
+/********/
+/* Main */
+/********/
+main {
+    /* parent 'main', flexbox childeren 'section' laten flexen */
+    display: flex;
+
+    flex-direction: column;
 }
 
-header>nav>ul
-{
-     margin: 0px auto 0px auto;
+/*********/
+/* Header*/
+/*********/
+header {
+    background-color: black;
+    margin: 0px auto 0px auto;
     padding: 10px;
+
 }
 
-/* h1 hidden? */
-header>nav>ul>li>a{
+/* h1 hidden?, main linkje */
+header > nav > ul > li > a {
     color: burlywood;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
 
- /* "LesMills" staat nu netjes in het midden */
-    position:absolute;
-    top:10px;
 }
 
-/* Flexbox(header, nav) elementen indelen*/
-nav>ul:nth-of-type(1){
+/**********************************/
+/* ul Flexbox: header, navigation */
+/**********************************/
+
+header > nav > ul:nth-of-type(1) {
     display: flex;
-
+    align-items: center;
+    height: 0.5em;
 }
-nav>ul:nth-of-type(1) li+li {
- margin-left:1em;
+
+header > nav > ul:nth-of-type(1) li + li {
+    margin-left: 1em;
 }
 
 /* first child="LesMillss" krijgt meer ruimte en de rest wordt naar recht "geduwd" */
-nav>ul:nth-of-type(1) li:first-of-type{
-     margin-right:auto;
+header > nav > ul:nth-of-type(1) li:first-of-type {
+    margin-right: auto;
 }
 
-nav>ul:nth-of-type(1) li img {
-    margin-right:.125em;
-     width: 30px;
-
+header > nav > ul:nth-of-type(1) li {
+    margin-right: .125em;
+    width: 30px;
+    list-style: none;
 }
+
 /* einde Flexbox (header) */
 
+/*********************/
+/* button navigation */
+/*********************/
+header > nav > ul > li > button {
+    display: contents;
+    /* button rand weglaten*/
+}
 
-/* nav linkjes
-header>nav>ul{
-    list-style-type: none;
-    margin:0;
-    padding:0;
+/* -----
+SVG search Icons button - source: svgicons.sparkk.fr
+----- */
+
+header > nav > ul > li > button > svg.svg-icon {
+    width: 2em;
+    height: 10em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: #BBBBBB;
+}
+
+.svg-icon circle {
+    stroke: #BBBBBB;
+    stroke-width: 1;
+}
+
+/* end SVG searchIcon */
+
+/************/
+/* Headings */
+/***********/
+h1 {}
+
+h2{
+color: white;
+}
+
+p{
+color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/***********************/
+/* section flexbox,    */
+/* in the main content */
+/***********************/
+
+section:nth-of-type(1) {
+
+    margin-left: 0;
+    margin-right: auto;
+ /*
+    color: white;
+    background-color: antiquewhite; */
+     width: 200%;
+  height:500px;
+  background-image: url('../images/phonePhoto/afb-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+section:nth-of-type(1)h2 {
+    display: flex;
+justify-content: center;
+
+}
+
+section:nth-of-type(2) {
+    background-color: navy;
+}
+
+section:last-of-type {
+    background-color: darkcyan;
+}
+
+/*
+main > section > figure > img {
+width: 100%;
 } */
+
+
