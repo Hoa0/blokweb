@@ -19,10 +19,15 @@ body {
 /* Main */
 /********/
 main {
-    /* parent 'main', flexbox childeren 'section' laten flexen */
+    /* parent 'main', flexbox childeren 'section' laten flexen
     display: flex;
 
-    flex-direction: column;
+    flex-direction: column; */
+
+    /* grid */
+    display: grid;
+    grid-template-rows: 1fr;
+
 }
 
 /*********/
@@ -39,7 +44,7 @@ header {
 header > nav > ul > li > a {
     color: burlywood;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     text-decoration: none;
 
@@ -107,54 +112,117 @@ header > nav > ul > li > button > svg.svg-icon {
 /***********/
 h1 {}
 
-h2{
-color: white;
+h2 {
+    text-transform: uppercase;
+    color: gainsboro;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
 }
 
-p{
-color: white;
+h3 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: gainsboro;
+    text-align: center;
 }
-a{
-    color: white;
+
+p {
+    color: gainsboro;
+    text-align: center;
+}
+
+a {
+    text-transform: uppercase;
+    color: goldenrod;
     text-decoration: none;
+  text-align: center;
 }
+
 /***********************/
 /* section flexbox,    */
 /* in the main content */
 /***********************/
 
 section:nth-of-type(1) {
-
-    margin-left: 0;
-    margin-right: auto;
- /*
+position: relative;
+    /*
     color: white;
-    background-color: antiquewhite; */
+    background-color: antiquewhite;
      width: 200%;
   height:500px;
   background-image: url('../images/phonePhoto/afb-1.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 
 }
 
-section:nth-of-type(1)h2 {
-    display: flex;
-justify-content: center;
-
+section:nth-of-type(1) img {
+    max-width: 100%;
 }
 
+section:nth-of-type(1) h2 {
+    position: absolute;
+    top: 3em;
+    padding-left: 10%;
+    padding-right: auto;
+    color: white;
+}
+
+section:nth-of-type(1) p {
+    position: absolute;
+    top: 15em;
+    margin-left: 5%;
+    margin-right: auto;
+    color: white;
+}
+
+section:nth-of-type(1) a {
+   position: absolute;
+    top: 20em;
+    margin-left: -70%;
+    margin-right: auto;
+    color: white;
+}
+
+/* tweede section */
 section:nth-of-type(2) {
-    background-color: navy;
+position: relative;
+}
+
+section:nth-of-type(2) img {
+  max-width: 100%;
+
+}
+section:nth-of-type(2) h2 {
+    position: absolute;
+    top: 3em;
+    padding-left: 10%;
+    padding-right: auto;
+    color: white;
+}
+
+section:nth-of-type(2) p {
+    position: absolute;
+    top: 15em;
+    margin-left: 5%;
+    margin-right: auto;
+    color: white;
+}
+
+section:nth-of-type(2) a {
+   position: absolute;
+    top: 20em;
+    margin-left: -70%;
+    margin-right: auto;
+    color: white;
+}
+
+/* derde section */
+section:nth-of-type(3) {
+    background-color: green;
 }
 
 section:last-of-type {
     background-color: darkcyan;
 }
-
-/*
-main > section > figure > img {
-width: 100%;
-} */
-
-
