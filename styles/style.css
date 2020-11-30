@@ -19,14 +19,8 @@ body {
 /* Main */
 /********/
 main {
-    /* parent 'main', flexbox childeren 'section' laten flexen
-    display: flex;
-
-    flex-direction: column; */
-
-    /* grid */
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1 fr;
 
 }
 
@@ -36,7 +30,7 @@ main {
 header {
     background-color: black;
     margin: 0px auto 0px auto;
-    padding: 10px;
+    padding: 0.5em;
 
 }
 
@@ -71,7 +65,7 @@ header > nav > ul:nth-of-type(1) li:first-of-type {
 
 header > nav > ul:nth-of-type(1) li {
     margin-right: .125em;
-    width: 30px;
+    /*width: 30px; */
     list-style: none;
 }
 
@@ -112,117 +106,38 @@ header > nav > ul > li > button > svg.svg-icon {
 /***********/
 h1 {}
 
-h2 {
-    text-transform: uppercase;
-    color: gainsboro;
-    text-align: center;
-    font-size: 1.7em;
-    font-weight: bold;
-}
-
-h3 {
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: gainsboro;
-    text-align: center;
-}
-
-p {
-    color: gainsboro;
-    text-align: center;
-}
-
+h2,
+h3,
+p,
 a {
     text-transform: uppercase;
-    color: goldenrod;
-    text-decoration: none;
-  text-align: center;
+
+    font-weight: bold;
+    font-size: 0.7em;
 }
 
-/***********************/
-/* section flexbox,    */
-/* in the main content */
-/***********************/
-
-section:nth-of-type(1) {
-position: relative;
-    /*
-    color: white;
-    background-color: antiquewhite;
-     width: 200%;
-  height:500px;
-  background-image: url('../images/phonePhoto/afb-1.png');
-  background-repeat: no-repeat;
-  background-size: contain; */
-
-}
-
-section:nth-of-type(1) img {
+img {
     max-width: 100%;
+
 }
 
-section:nth-of-type(1) h2 {
+/* article style on the homepage */
+section > article > div.styleHome {
     position: absolute;
-    top: 3em;
-    padding-left: 10%;
-    padding-right: auto;
-    color: white;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
 }
 
-section:nth-of-type(1) p {
-    position: absolute;
-    top: 15em;
-    margin-left: 5%;
-    margin-right: auto;
-    color: white;
+
+section > article {
+    position: relative;
 }
 
-section:nth-of-type(1) a {
-   position: absolute;
-    top: 20em;
-    margin-left: -70%;
-    margin-right: auto;
-    color: white;
-}
+.styleArticle {
+    text-align: center;
 
-/* tweede section */
-section:nth-of-type(2) {
-position: relative;
-}
-
-section:nth-of-type(2) img {
-  max-width: 100%;
-
-}
-section:nth-of-type(2) h2 {
-    position: absolute;
-    top: 3em;
-    padding-left: 10%;
-    padding-right: auto;
-    color: white;
-}
-
-section:nth-of-type(2) p {
-    position: absolute;
-    top: 15em;
-    margin-left: 5%;
-    margin-right: auto;
-    color: white;
-}
-
-section:nth-of-type(2) a {
-   position: absolute;
-    top: 20em;
-    margin-left: -70%;
-    margin-right: auto;
-    color: white;
-}
-
-/* derde section */
-section:nth-of-type(3) {
-    background-color: green;
-}
-
-section:last-of-type {
-    background-color: darkcyan;
+    color: black;
 }
