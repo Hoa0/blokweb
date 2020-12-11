@@ -6,9 +6,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. bron 1 eerste pagina: https://www.lesmills.com/nl/
-2. bron 2 tweede pagina: https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/
-3. -...-https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
+1. bron 1 eerste pagina: [(https://www.lesmills.com/nl)]
+2. bron 2 tweede pagina: [(https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/)]
+3. -...-[(https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/)]
+4. [(https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)]
 
 
 
@@ -38,19 +39,29 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+1. Dit ging goed:
+* De structuur van "Index.html" controleer ik iedere week of het nog semantiek correct is.
+* Het is gelukt om de navigatiemenu en foto's in de content op de homepagina te krijgen.
+* BreakDown Schets & readme Updaten
+
+1. Dit was lastig:
+* Positionering van elementen op een foto vond ik lastig.
+
 
 **Screenshot(s):**
 
 -screenshot(s) van hoe ver je bent met korte uitleg-
+* Ik was nog niet heel ver met de eind opdracht, waardoor ik alleen de homepagina heb.
+
+<img src="images/readme/voortgang1.png" width="375px" alt="voortgang1-scherm">
 
 ### Agenda voor meeting
 
 Samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+| Thuan-Hoa      | Raekwon            | Marjolein    | Nazier           |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| Positionering van elementen op een image, nav fixed?, grid in een article?| en dit             | en ik dit    | en dan ik dat    |
 | an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 

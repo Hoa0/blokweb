@@ -1,9 +1,12 @@
 /* CSS Document */
 
-/**, *::after, *::before {
-  box-sizing:border-box;
-} */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
 
+/*------ mobiel first -------*/
 HTML,
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -15,45 +18,32 @@ body {
 
 }
 
-/********/
-/* Main */
-/********/
-main {
-    display: grid;
-    grid-template-rows: 1 fr;
+/***************************/
+/*------ header: nav ------*/
+header > nav {
+  /*  overflow:scroll;
+    position: fixed;*/
 
-}
-
-/*********/
-/* Header*/
-/*********/
-header {
     background-color: black;
     margin: 0px auto 0px auto;
+    top: 0;
+    width: 100%;
     padding: 0.5em;
 
+    z-index: 1;
+     position: fixed;
 }
 
-/* h1 hidden?, main linkje */
-header > nav > ul > li > a {
-    color: burlywood;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8em;
-    font-weight: bold;
-    text-decoration: none;
-
-}
-
-/**********************************/
-/* ul Flexbox: header, navigation */
-/**********************************/
-
+/*------Flexbox: navigaation ------*/
+/*------ first unorder list in the nav ------*/
 header > nav > ul:nth-of-type(1) {
     display: flex;
     align-items: center;
     height: 0.5em;
+
 }
 
+/* icon search & icon hamburger space */
 header > nav > ul:nth-of-type(1) li + li {
     margin-left: 1em;
 }
@@ -64,24 +54,37 @@ header > nav > ul:nth-of-type(1) li:first-of-type {
 }
 
 header > nav > ul:nth-of-type(1) li {
-    margin-right: .125em;
-    /*width: 30px; */
     list-style: none;
 }
 
-/* einde Flexbox (header) */
+/*------ titel "LesMills" style ------ */
+header > nav > ul > li > a {
+    color: whitesmoke;
+    /*font-family: 'Roboto', sans-serif;*/
 
-/*********************/
-/* button navigation */
-/*********************/
-header > nav > ul > li > button {
-    display: contents;
-    /* button rand weglaten*/
+    /*font-family: "TradeGothicW01Cn18";
+    font-family: "HelveticaNeueW01-45Ligh"; */
+    font-family: "TradeGothicW01Cn18", sans-serif;
+
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px grey,
+        1px 1px 1px grey;
+    letter-spacing: 1px;
+    text-transform: none;
 }
 
-/* -----
-SVG search Icons button - source: svgicons.sparkk.fr
------ */
+/* button navigation: search & hamburger */
+header > nav > ul > li > button {
+    /* button rand weglaten*/
+    display: contents;
+}
+
+/********************************/
+/* SVG search Icons button      */
+/* - source: svgicons.sparkk.fr */
+/********************************/
 
 header > nav > ul > li > button > svg.svg-icon {
     width: 2em;
@@ -96,48 +99,322 @@ header > nav > ul > li > button > svg.svg-icon {
 
 .svg-icon circle {
     stroke: #BBBBBB;
-    stroke-width: 1;
+    stroke-width: 1rem;
 }
 
 /* end SVG searchIcon */
+/********* End header*********/
 
-/************/
-/* Headings */
-/***********/
-h1 {}
+/********************/
+/*------ Main ------*/
+main {
+    display: grid;
+    /* display section elements as row */
+    grid-template-rows: 1fr;
+    /*grid-gap: 2em;*/
+}
+/***************************************/
+/*------ all the figure elements ------*/
+/* with an image inside */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/*------ all image caption make hidden------*/
+figcaption {
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+/*------ Text positioning center ------*/
+/* text on the image */
+div.styleHome {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    /* center small screen*/
+    transform: translate(-50%, -50%);
+    /* color: whitesmoke; */
+    color: whitesmoke;
+}
+
+
+/**************************************/
+/*------ Images at the homepage ------*/
+img {
+    max-width: 100%;
+
+}
+/* hide image-size(web) for mobile mode*/
+.image-web {
+    display: none;
+}
+
+/************************/
+/*------ Headings ------*/
+h1 {
+    /* hide h1 */
+    display: none;
+}
 
 h2,
 h3,
 p,
 a {
     text-transform: uppercase;
-
     font-weight: bold;
-    font-size: 0.7em;
-}
-
-img {
-    max-width: 100%;
 
 }
 
-/* article style on the homepage */
-section > article > div.styleHome {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: whitesmoke;
+h2 {
+    font-size: 1.2em;
+
+}
+
+h3 {
+    font-size: 0.8em;
+}
+
+p {
+    font-size: 0.6em;
+}
+
+a {
+    font-size: 0.5em;
+}
+
+/* list style general */
+li{
+    list-style: none;
 }
 
 
-section > article {
+/********************/
+/*------ Main ------*/
+main {
+    display: grid;
+    /* display section elements as row */
+    grid-template-rows: 1fr;
+    /*grid-gap: 2em;*/
+    position: relative;
+}
+main>section{
+    position: relative;
+}
+main>section>article{
     position: relative;
 }
 
-.styleArticle {
-    text-align: center;
+/*****************************/
+/*------ first section ------*/
+main > section:nth-of-type(1) {
+    background-color: olivedrab;
 
-    color: black;
 }
+/* resize image on the first section */
+main > section:nth-of-type(1)>figure>img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/*************************************************/
+/*------ second section with two article's ------*/
+/* second section --> 1e article */
+main > section:nth-of-type(2) article:nth-of-type(1) {
+    display: grid;
+    grid-template-rows: [row1-start] 100% [row1-end] 180px [third-line] auto [last-line];
+    background-color: #004d66;
+}
+
+/* second section --> 2e article */
+main > section:nth-of-type(2) article:nth-of-type(2) {
+    display: grid;
+    grid-template-rows: [row1-start] 100% [row1-end] 10px [third-line] auto [last-line];
+    background-color: white;
+
+}
+
+/* second section --> 2e article, text style color */
+main > section:nth-of-type(2) article:nth-of-type(2) > div.styleHome2 {
+    color: black;
+    float: left;
+    padding-left: 5%;
+}
+
+/*****************************/
+/*------ third section ------*/
+main > section:nth-of-type(3) > article {
+    display: grid;
+    grid-template-rows: [row1-start] 100% [row1-end] 20px [third-line] auto [last-line];
+    background-color: palevioletred;
+
+}
+
+/* third section, position text*/
+main > section:nth-of-type(3) > article > div.styleHome3 {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 80%;
+    left: 50%;
+    /* center small screen*/
+    transform: translate(-50%, -50%);
+    /* color: whitesmoke; */
+    color: whitesmoke;
+}
+
+/* third section > link "lees meer"*/
+main > section:nth-of-type(3) > article:nth-of-type(1) > div.styleHome3 > a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+
+/*******************************/
+/*------ seventh section ------*/
+main > section:nth-of-type(7) {
+    display: grid;
+    grid-template-rows: [row1-start] 100% [row1-end] 200px [third-line] auto [last-line];
+    background-color: black;
+
+}
+
+
+
+
+
+
+/********************************/
+/*------ Link "button" ---------*/
+/* button first section -yellow */
+a.buttonLink-yellow {
+    background-color: #ffc425;
+    color: black;
+    font-weight: bold;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* link "button" first section - green */
+a.buttonLink-green {
+    background-color: #00a077;
+    color: white;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    text-align: center;
+}
+
+/* link "button" position, first section -green */
+main > section:nth-of-type(1) > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* link "button" position, first section -green */
+main > section:nth-of-type(1) > ul > li {
+    list-style: none;
+}
+
+/* button second section - white/grey */
+section:nth-of-type(2) > article:nth-of-type(1) > div.styleHome > a.buttonLink-section2 {
+    color: black;
+    border: solid 0.8em #efefef;
+    border-radius: 6%;
+    text-decoration: none;
+    background-color: #efefef;
+    font-size: 0.8em;
+}
+
+.buttonLink-blue {
+    background-color: #006384;
+    color: white;
+    font-weight: bold;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6%;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+
+a.buttonLink {
+    background-color: #00a077;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+/*------------------BodyPump - page ------------------------*/
+
+div.styleArticle-bp {
+    vertical-align: top;
+    margin: 15px;
+}
+
+section:nth-of-type(3).s-bp3{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+
+
+
+/**********************/
+/*------ footer ------*/
+footer {
+    background-color: #666666;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer > section {
+    padding-left: 5%;
+    width: 80%;
+}
+
+
+/*------ website modes -------*/
+@media (min-width: 40em) {
+
+    /* show image-size for website mode*/
+    .image-web {
+        display: block;
+    }
+
+    /* hide image-size for mobiel mode */
+    .image-mob {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
