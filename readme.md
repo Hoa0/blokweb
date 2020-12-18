@@ -25,13 +25,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+1. Dit ging goed:
+* Grid area voor mobiel formaat is gelukt.
+* elementsen op de juiste manier "hidden" maaken.
 
+2. Dit was lastig:
+* SVG iconen plaatsen lukt nog niet en snap er vrij weinig van.
+* Grid area voor website formaat niet gelukt om het "responsive" te krijgen.
+* nog niet de juiste fonts kunnen vinden.
 
 
 ## Voortgang 2 (week 5)
 
 -same as voortgang 1-
+Github problemen oplossen
 
 
 
