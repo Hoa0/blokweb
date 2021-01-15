@@ -224,6 +224,7 @@ main > section > article {
 /*------ first section ------*/
 main > section:nth-of-type(1) {
     background-color: #00a077;
+    margin-bottom: 1em;
 
 }
 
@@ -280,6 +281,7 @@ main > section:nth-of-type(2) article:nth-of-type(2) {
     display: grid;
     grid-template-rows: [row1-start] 100% [row1-end] 10px [third-line] auto [last-line];
     background-color: white;
+    margin-bottom: 3em;
 
 }
 
@@ -320,6 +322,7 @@ main > section:nth-of-type(3) {
         "primeur primeur"
         "links rechts"
         "linksOnder laatste";
+    margin-bottom: 1em;
 }
 
 main > section:nth-of-type(3) article:nth-of-type(1) {
@@ -339,25 +342,35 @@ main > section:nth-of-type(3) article:nth-of-type(3) {
 
 main > section:nth-of-type(3) article:nth-of-type(4) {
     grid-area: linksOnder;
-    margin-bottom: -0.2em;
+    margin-bottom: 1em;
 }
 
 main > section:nth-of-type(3) article:nth-of-type(5) {
     grid-area: laatste;
     background-color: #00a077;
+    margin-bottom: 1em;
 }
 
 /* end 3e section - grid area */
 
-
-
-main > section:nth-of-type(3) > article:nth-of-type(5) {
-    background-color: #00a077;
+main > section:nth-of-type(4) {
+    margin-bottom: 4em;
 }
+
+main > section:nth-of-type(5) {
+    margin-bottom: 4em;
+}
+
+
+
+
+
 
 /*******************************/
 /*------ sixth section ------*/
-main > section:nth-of-type(6) {}
+main > section:nth-of-type(6) {
+    margin-bottom: 4em;
+}
 
 
 /*******************************/
@@ -434,24 +447,62 @@ a.buttonLink {
 
 /*------------------BodyPump - page ------------------------*/
 
+/* nog veranderen*/
 .img-website {
     display: none;
 }
+
 .img-mobile {
-    display:block;
+    display: block;
 }
 
-div.styleArticle-bp {
-    vertical-align: top;
-    margin: 15px;
+main.p-bodypump div.styleHome {
+    position: absolute;
+    top: 50%;
+
+    left: 35%;
+    /* center small screen*/
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
 }
 
-section:nth-of-type(3).s-bp3 {
-    background-color: black;
-    padding: 0;
-    margin: 0;
+main.p-bodypump > section:first-of-type div.styleHome a {
+    background-color: red;
     color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+
 }
+
+main.p-bodypump > section:nth-of-type(2) ul {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+main.p-bodypump > section:nth-of-type(2) ul li {
+    padding: 1em;
+
+}
+
+main.p-bodypump > section:nth-of-type(3) {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+main.p-bodypump > section:nth-of-type(4) {
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+
+/* end */
 
 /**********************/
 /*------ footer ------*/
@@ -486,24 +537,51 @@ footer > a:nth-of-type(2) {
     line-height: 3em;
 }
 
+/* SVG icon's*/
+footer > ul > li > a svg {
+    width: 50%;
+}
+
+/* svg footer iconen */
+footer > ul > li > a path {
+    /* icon color */
+    fill: #c6c6c6;
+}
+
+footer > ul {
+    display: flex;
+}
+
+footer > ul > li:first-of-type {
+    margin-left: -2em;
+}
+
+footer > ul > li + li {
+    margin-left: -10em;
+}
+
+/* end svg footer icon */
+
 /*------ website modes -------*/
 @media (min-width: 40em) {
 
-  /* grid area - 3e section */
+    /* grid area - 3e section */
     main > section:nth-of-type(3) {
         display: grid;
         grid-template-areas:
             "primeur primeur primeur primeur "
             " links rechts linksOnder laatste";
     }
+
     .img-mobile {
         display: none;
     }
-    .img-website {
-    display:block;
-}
 
-     footer > p {
+    .img-website {
+        display: block;
+    }
+
+    footer > p {
 
         width: 30%;
     }
@@ -511,7 +589,8 @@ footer > a:nth-of-type(2) {
 
 
 @media (min-width: 40em) {
-      /* grid area - 3e section */
+
+    /* grid area - 3e section */
     main > section:nth-of-type(3) {
         display: grid;
         grid-template-areas:
@@ -519,8 +598,3 @@ footer > a:nth-of-type(2) {
             "primeur primeur linksOnder laatste";
     }
 }
-
-
-
-
-
