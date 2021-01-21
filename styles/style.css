@@ -273,10 +273,11 @@ main.p-home section article {
 }
 
 /*---------- SECTION 1 ----------*/
-main> section:nth-of-type(1) > div.styleText > h3 {
-      text-shadow: 2px 2px black;
+main > section:nth-of-type(1) > div.styleText > h3 {
+    text-shadow: 2px 2px black;
     font-size: 1.7em;
 }
+
 /* section 1, p elements style */
 main > section:nth-of-type(1) > div.styleText > p {
     text-shadow: 2px 2px black;
@@ -298,6 +299,7 @@ main > section:nth-of-type(1) > a {
     /* center small screen*/
     transform: translate(-50%, -50%);
 }
+
 /* link "ondek meer" backgroundcolor */
 main > section:nth-of-type(1) > a:hover {
     color: gray;
@@ -365,7 +367,7 @@ main > section:nth-of-type(2) {
 }
 
 /* section 2 --> 1e article */
-main > section:nth-of-type(2).section-home2 article:nth-of-type(1) {
+main > section:nth-of-type(2).section-home-two article:nth-of-type(1) {
     display: grid;
     grid-template-rows: [row1-start] 100% [row1-end] 180px [third-line] auto [last-line];
     background-color: #004d66;
@@ -373,7 +375,7 @@ main > section:nth-of-type(2).section-home2 article:nth-of-type(1) {
 }
 
 /* section 2 --> 1e article - text style*/
-main > section:nth-of-type(2).section-home2 > article:nth-of-type(1) > div.styleText h3 {
+main > section:nth-of-type(2).section-home-two > article:nth-of-type(1) > div.styleText h3 {
     font-size: 1.1em;
 }
 
@@ -855,11 +857,23 @@ footer > section a:hover {
 
     /* homepage ---grid area - section 3 */
     main > section:nth-of-type(3).section-home-three {
+        /* breakepoint*/
+       /* max-width: 500vh;
+        margin-left: 10%;
+        margin-right: 10%; */
         display: grid;
         grid-gap: 0;
         grid-template-areas:
             "primeur primeur primeur primeur"
             " links rechts linksOnder laatste";
+    }
+
+    main > section:nth-of-type(3).section-home-three > article div.styleText > h3 {
+        font-size: 0.9em;
+    }
+
+    main > section:nth-of-type(3).section-home-three > article div.styleText > p {
+        font-size: 0.7em;
     }
 
     /*-----------------MEDIA BODYPUMP PAGE ----------*/
@@ -890,8 +904,9 @@ footer > section a:hover {
     main.p-bodypump > section:nth-of-type(1) > div.styleText-bp p {
         font-size: 1.2em;
     }
-/* section 2 - ul list responsive */
-    main.p-bodypump > section:nth-of-type(2) ul li{
+
+    /* section 2 - ul list responsive */
+    main.p-bodypump > section:nth-of-type(2) ul li {
         display: inline-block;
 
     }
@@ -998,7 +1013,6 @@ footer > section a:hover {
         margin-right: auto;
 
     }
-
 
 
 
