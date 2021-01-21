@@ -6,39 +6,55 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. bron 1 eerste pagina: [(https://www.lesmills.com/nl)]
-2. bron 2 tweede pagina: [(https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/)]
-3. -...-[(https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/)]
-4. [(https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/)]
-
-
+1. bron 1 eerste pagina: https://www.lesmills.com/nl
+2. bron 2 tweede pagina: https://www.lesmills.com/nl/workouts/fitness-lessen/bodypump/
+3. bron 3: elementen verbergen: https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
+4. bron 4: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+5. bron: 5 hamburger menu: https://www.youtube.com/watch?v=gXkqy0b4M5g
+6. bron 6 - SVG icons: https://iconmonstr.com
 
 ## Eindgesprek (week 7/8)
+1. Dit ging goed:
+* Website zo veel mogelijk responsive te krijgen door gebruik te maken van grid-template.
+*hamburger menu animeren en menu laten zien.
+* Toevoegen van een youtube video
+* In CSS, het aanroepen van elementen.
 
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
+2.dit was lastig:
+* Helaas, had ik het erg druk in de tentamen week. Waardoor ik niet veel aan front-end kon zitten.
+* Navigatie menu responsive maken, helaas niet gelukt.
+* Website responsive maken, deels is het gelukt
 
 -screenshot(s) van je eindresultaat-
+* Home pagina:
+<img src="images/readme/home1.png" width="375px" alt="lesmills-website">
+<img src="images/readme/home-grid.png" width="375px" alt="lesmills-website">
+<img src="images/readme/navi.png" width="375px" alt="lesmills-website">
 
-
+* Pagina 2:
+<img src="images/readme/pagina-2.png" width="375px" alt="lesmills-website">
+<img src="images/readme/pagina-2-list.png" width="375px" alt="lesmills-website">
+<img src="images/readme/pagina-2-vid.png" width="375px" alt="lesmills-website">
+* footer met SVG icons
+<img src="images/readme/footer.png" width="375px" alt="lesmills-website">
 
 ## Voortgang 3 (week 6)
 
 1. Dit ging goed:
 * Grid area voor mobiel formaat is gelukt.
-* elementsen op de juiste manier "hidden" maaken.
+* elementsen op de juiste manier "hidden" maken.
 
 2. Dit was lastig:
 * SVG iconen plaatsen lukt nog niet en snap er vrij weinig van.
 * Grid area voor website formaat niet gelukt om het "responsive" te krijgen.
 * nog niet de juiste fonts kunnen vinden.
 
+<img src="images/readme/screenshot-wk.png" width="375px" alt="lesmills-website">
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
-Github problemen oplossen
+-Voortgang 2-
+In week 5 heb ik de "Github problemen opgelost". Dit waren Footer, heaading structuur en percentage aanpassen op elementen.
 
 
 
@@ -74,9 +90,9 @@ Samen met je groepje opstellen
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
-
-
+Meeting: 1 -
+1. vragen gesteld waar ik niet uitkwam.
+2. Na afloop van de les, heb ik gelijk de feedback verwerkt. Namelijk de navigation vast zetten en text op een image.
 
 ## Breakdownschets (week 1)
 Uitwerken voor de 1e werkgroep:

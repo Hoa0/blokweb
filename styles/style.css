@@ -103,8 +103,6 @@ header > nav:first-of-type > ul > li > button > svg.svg-icon {
 
 /* end hamburger menu button: search*/
 
-
-
 /*------button lines - hamburger menu------*/
 /* https://stackoverflow.com/questions/38048131/how-to-newline-in-html-button */
 header > nav:first-of-type > ul:first-of-type > li:nth-of-type(3) > button.bnt-burger-toggle span {
@@ -270,16 +268,19 @@ main.p-home section {
     position: relative;
 }
 
-
 main.p-home section article {
     position: relative;
 }
 
 /*---------- SECTION 1 ----------*/
+main> section:nth-of-type(1) > div.styleText > h3 {
+      text-shadow: 2px 2px black;
+    font-size: 1.7em;
+}
 /* section 1, p elements style */
 main > section:nth-of-type(1) > div.styleText > p {
     text-shadow: 2px 2px black;
-    font-size: 0.9em;
+    font-size: 1.4em;
 }
 
 /* button link style section 1-- "ontdek meer"--*/
@@ -297,7 +298,7 @@ main > section:nth-of-type(1) > a {
     /* center small screen*/
     transform: translate(-50%, -50%);
 }
-
+/* link "ondek meer" backgroundcolor */
 main > section:nth-of-type(1) > a:hover {
     color: gray;
     background-color: #ffd972;
